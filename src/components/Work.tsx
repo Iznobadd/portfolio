@@ -1,3 +1,7 @@
 export default function Work() {
-  return <div></div>;
+  return (
+    <div className="section" id="work">
+      Work
+    </div>
+  );
 }

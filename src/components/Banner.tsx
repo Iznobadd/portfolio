@@ -1,3 +1,7 @@
 export default function Banner() {
-  return <div></div>;
+  return (
+    <div className="section" id="home">
+      Banner
+    </div>
+  );
 }

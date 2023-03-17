@@ -1,3 +1,7 @@
 export default function Services() {
-  return <div></div>;
+  return (
+    <div className="section" id="services">
+      Services
+    </div>
+  );
 }
