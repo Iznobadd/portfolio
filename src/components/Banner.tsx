@@ -3,6 +3,7 @@ import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 export default function Banner() {
   return (
@@ -51,9 +52,28 @@ export default function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
+              <button className="btn btn-lg">
+                {" "}
+                <Link
+                  to="contact"
+                  activeClass="active"
+                  smooth={true}
+                  spy={true}
+                  className=""
+                >
+                  Contact me
+                </Link>
+              </button>
               <a href="#" className="text-gradient btn-link">
-                My Portfolio
+                <Link
+                  to="work"
+                  activeClass="active"
+                  smooth={true}
+                  spy={true}
+                  className=""
+                >
+                  My Portfolio
+                </Link>
               </a>
             </motion.div>
             <motion.div
