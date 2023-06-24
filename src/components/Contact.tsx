@@ -14,11 +14,9 @@ export default function Contact() {
             className="flex-1 flex justify-start items-center"
           >
             <div>
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
-                Get in touch
-              </h4>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br /> together!
+                Entrer en <br />
+                Contact
               </h2>
             </div>
           </motion.div>
@@ -33,18 +31,18 @@ export default function Contact() {
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               type="text"
-              placeholder="Your name"
+              placeholder="Ton nom"
             />
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               type="text"
-              placeholder="Your email"
+              placeholder="Ton email"
             />
             <textarea
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
-              placeholder="Your message"
+              placeholder="Ton message"
             ></textarea>
-            <button className="btn btn-lg">Send message</button>
+            <button className="btn btn-lg">Envoyer</button>
           </motion.form>
         </div>
       </div>

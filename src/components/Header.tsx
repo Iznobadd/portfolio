@@ -16,7 +16,7 @@ export default function Header() {
               spy={true}
               className=""
             >
-              Work with me
+              Me contacter
             </Link>
           </button>
         </div>

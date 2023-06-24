@@ -18,14 +18,18 @@ export default function Work() {
           >
             <div>
               <h2 className="h2 leading-tight text-accent">
-                My Latest
-                <br /> Work.
+                Mes derniers
+                <br /> Projets.
               </h2>
               <p className="max-w-sm mb-16">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consectetur odit vero impedit vel dolore? Nisi cum placeat
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button className="btn btn-sm">
+                <a href="https://github.com/Iznobadd" target="_blank">
+                  Voir tous mes projets
+                </a>
+              </button>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>

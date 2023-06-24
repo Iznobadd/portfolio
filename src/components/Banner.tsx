@@ -1,6 +1,5 @@
 import Image from "../assets/avatar.svg";
-import { FaGithub, FaYoutube, FaDribbble } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
@@ -30,8 +29,9 @@ export default function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
-              <span className="text-white mr-4">I am a</span>
-              <span className="text-accent">Developer</span>
+              <span className="text-white mr-4">Développeur</span>
+              <br />
+              <span className="text-accent">Full-stack</span>
             </motion.div>
             <motion.p
               variants={fadeIn("up", 0.5)}
@@ -53,7 +53,6 @@ export default function Banner() {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <button className="btn btn-lg">
-                {" "}
                 <Link
                   to="contact"
                   activeClass="active"
@@ -61,7 +60,7 @@ export default function Banner() {
                   spy={true}
                   className=""
                 >
-                  Contact me
+                  A propos de moi
                 </Link>
               </button>
               <a href="#" className="text-gradient btn-link">
@@ -72,7 +71,7 @@ export default function Banner() {
                   spy={true}
                   className=""
                 >
-                  My Portfolio
+                  Portfolio
                 </Link>
               </a>
             </motion.div>
@@ -83,14 +82,14 @@ export default function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaYoutube />
+              <a
+                href="https://www.linkedin.com/in/brandoncebi/"
+                target="_blank"
+              >
+                <FaLinkedin />
               </a>
-              <a href="#">
+              <a href="https://github.com/Iznobadd" target="_blank">
                 <FaGithub />
-              </a>
-              <a href="#">
-                <FaDribbble />
               </a>
             </motion.div>
           </div>

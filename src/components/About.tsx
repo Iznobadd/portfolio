@@ -2,6 +2,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -25,8 +26,8 @@ export default function About() {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className="h2 text-accent">About me.</h2>
-            <h3 className="h3 mb-4">I'm a Freelance Full-stack Developer</h3>
+            <h2 className="h2 text-accent">a propos de moi.</h2>
+            <h3 className="h3 mb-4">Développeur Full-stack</h3>
             <p className="mb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
               nemo, reiciendis ipsam error minima ducimus minus ut nobis,
@@ -36,36 +37,45 @@ export default function About() {
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={3} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Years of <br />
-                  Experience
+                  Années <br />
+                  D'experience
                 </div>
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Projects <br />
-                  Completed
-                </div>
-              </div>
-              <div>
-                <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : null}
-                </div>
-                <div className="font-primary text-sm tracking-[2px]">
-                  Satisfied <br />
-                  Clients
+                  Projets <br />
+                  Completés
                 </div>
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact me</button>
+              <button className="btn btn-lg">
+                <Link
+                  to="contact"
+                  activeClass="active"
+                  smooth={true}
+                  spy={true}
+                  className=""
+                >
+                  Me contacter
+                </Link>
+              </button>
               <a href="#" className="text-gradient btn-link">
-                My Portfolio
+                <Link
+                  to="work"
+                  activeClass="active"
+                  smooth={true}
+                  spy={true}
+                  className=""
+                >
+                  Portfolio
+                </Link>
               </a>
             </div>
           </motion.div>
