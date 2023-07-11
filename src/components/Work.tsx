@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img1 from "../assets/mockup-riad.jpg";
+import Img2 from "../assets/mockup-netflix.jpg";
+import Img3 from "../assets/mockup-portfolio.jpg";
 
 export default function Work() {
   return (
@@ -14,7 +14,7 @@ export default function Work() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-24 mb-10 lg:mb-0"
           >
             <div>
               <h2 className="h2 leading-tight text-accent">
@@ -32,18 +32,24 @@ export default function Work() {
               </button>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
-                alt="Project 1"
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
-              </div>
+              <a
+                href="https://github.com/Iznobadd/riadmalaika"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img1}
+                  alt="Mockup Riad Malaïka"
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">React</span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">Riad Malaïka</span>
+                </div>
+              </a>
             </div>
           </motion.div>
           <motion.div
@@ -54,32 +60,44 @@ export default function Work() {
             className="flex-1 flex flex-col gap-y-10"
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
-                alt="Project 2"
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
-              </div>
+              <a
+                href="https://github.com/Iznobadd/netflix-clone"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img2}
+                  alt="Mockup Netflix Clone"
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">
+                    React | GraphQL | Tailwind
+                  </span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">Netflix Clone</span>
+                </div>
+              </a>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
-                alt="Project 1"
-              />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white">Project Title</span>
-              </div>
+              <a href="./">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img3}
+                  alt="Mockup Portfolio"
+                />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">React | Tailwind</span>
+                </div>
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white">
+                    Portfolio Brandon CEBI
+                  </span>
+                </div>
+              </a>
             </div>
           </motion.div>
         </div>
