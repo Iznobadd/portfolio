@@ -28,11 +28,18 @@ export default function About() {
           >
             <h2 className="h2 text-accent">a propos de moi.</h2>
             <h3 className="h3 mb-4">Développeur Full-stack</h3>
-            <p className="mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              nemo, reiciendis ipsam error minima ducimus minus ut nobis,
-              dolorum eius quis temporibus harum unde, beatae illum laboriosam.
-              Nesciunt, laborum sit.
+            <p className="mb-6 text-justify">
+              Je suis un développeur web full-stack établi à Orléans, en France,
+              avec une passion profonde pour la création et la mise en œuvre de
+              sites web et d'applications de haute qualité. Mon engagement
+              envers l'excellence dans la conception et le développement se
+              reflète dans chaque projet que j'aborde. Ma détermination à rester
+              à la pointe des dernières avancées technologiques m'incite à
+              constamment me perfectionner et à adopter de nouvelles
+              compétences. Les défis complexes sont pour moi autant d'occasions
+              d'apprendre et de grandir. En somme, mon objectif est de
+              collaborer avec vous pour concrétiser vos idées en solutions web
+              innovantes et performantes.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -46,7 +53,7 @@ export default function About() {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Projets <br />

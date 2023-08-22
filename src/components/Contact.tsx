@@ -15,7 +15,7 @@ export default function Contact() {
           >
             <div>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Entrer en <br />
+                Entrons en <br />
                 Contact
               </h2>
             </div>

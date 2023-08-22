@@ -1,4 +1,4 @@
-import Image from "../assets/avatar.svg";
+import Image from "../assets/avatar.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -38,12 +38,14 @@ export default function Banner() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 max-w-lg mx-auto lg:mx-0"
+              className="mb-8 max-w-lg mx-auto lg:mx-0 text-justify"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-              rem explicabo at aperiam laborum. Nemo nisi eaque modi quidem
-              aliquam quis ullam numquam accusamus consequuntur deleniti? Quae
-              temporibus harum repellat.
+              Bienvenue sur mon portfolio professionnel. Je vous invite
+              cordialement à me contacter afin d'évoquer vos besoins en projets.
+              En qualité de travailleur indépendant, je me tiens à votre
+              disposition pour collaborer sur divers projets. Je suis
+              enthousiaste à l'idée d'explorer de nouvelles opportunités
+              d'emploi.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -54,7 +56,7 @@ export default function Banner() {
             >
               <button className="btn btn-lg">
                 <Link
-                  to="contact"
+                  to="about"
                   activeClass="active"
                   smooth={true}
                   spy={true}
@@ -85,10 +87,15 @@ export default function Banner() {
               <a
                 href="https://www.linkedin.com/in/brandoncebi/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedin />
               </a>
-              <a href="https://github.com/Iznobadd" target="_blank">
+              <a
+                href="https://github.com/Iznobadd"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub />
               </a>
             </motion.div>
@@ -99,7 +106,7 @@ export default function Banner() {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
           >
-            <img src={Image} alt="Profile picture Brandon CEBI" />
+            <img src={Image} alt="Profile Brandon CEBI" />
           </motion.div>
         </div>
       </div>
