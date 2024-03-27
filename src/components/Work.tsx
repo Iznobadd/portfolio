@@ -21,9 +21,11 @@ export default function Work() {
                 Mes derniers
                 <br /> Projets.
               </h2>
-              <p className="max-w-sm mb-16">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consectetur odit vero impedit vel dolore? Nisi cum placeat
+              <p className="max-w-sm mb-9">
+                Chaque projet est le fruit d'une approche créative et technique,
+                visant à offrir des expériences utilisateur exceptionnelles.
+                Explorez ces réalisations pour découvrir mon expertise
+                développement web.
               </p>
               <button className="btn btn-sm">
                 <a href="https://github.com/Iznobadd" target="_blank">
@@ -33,7 +35,7 @@ export default function Work() {
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <a
-                href="https://github.com/Iznobadd/riadmalaika"
+                href="https://riad-malaika-essaouira.com/"
                 target="_blank"
                 rel="noreferrer"
               >
